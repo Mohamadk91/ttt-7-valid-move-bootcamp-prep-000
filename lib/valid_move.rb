@@ -7,5 +7,5 @@ def position_taken?(board,index)
 end
 
 def valid_move?(board,index)
-  index <= 8  && index >= 0
+  index <= 8  && index >= 0   &&  !position_taken?(board, index)
 end
